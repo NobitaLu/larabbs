@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}">
+<!-- Styles -->
+<link href="{{ asset('css/app.css') }}" rel="stylesheet">
+@yield('styles')
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,5 +34,6 @@
 
 <!-- Scripts -->
 <script src="{{ asset('js/app.js') }}"></script>
+@yield('scripts')
 </body>
 </html>
